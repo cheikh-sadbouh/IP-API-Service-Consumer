@@ -1,0 +1,30 @@
+package com.roche.interview.exception;
+
+import org.springframework.http.HttpStatus;
+
+import java.time.ZonedDateTime;
+
+public class ApiResponseMessage {
+    private final String message;
+    private final HttpStatus httpStatus;
+    private final ZonedDateTime timestamp;
+
+    public ApiResponseMessage(String message, HttpStatus httpStatus, ZonedDateTime timestamp) {
+        this.message = message;
+        this.httpStatus = httpStatus;
+        this.timestamp = timestamp;
+    }
+
+    public HttpStatus getHttpStatus() {
+        return httpStatus;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public ZonedDateTime getTimestamp() {
+        return timestamp;
+    }
+
+}
