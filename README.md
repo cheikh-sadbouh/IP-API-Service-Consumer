@@ -22,7 +22,7 @@ mvn spring-boot:run
 Invalid Request: 
 
 ```
-http://localhost:8888/api/v1/northencountries?ip=119.18.X.3
+http://localhost:8888/api/v1/northern-countries?ip=119.18.X.3
 ```
 
 Response: 
@@ -37,7 +37,7 @@ Response:
  Valid Request: 
 
 ```
-http://localhost:8888/api/v1/northencountries?ip=34.5.6.7&ip=8.8.8.8&ip=27.125.224.3
+http://localhost:8888/api/v1/northern-countries?ip=34.5.6.7&ip=8.8.8.8&ip=27.125.224.3
 ```
 
 Response: 
